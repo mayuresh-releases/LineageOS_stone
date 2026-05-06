@@ -16,8 +16,8 @@
 ## 🧹 Clean Flash (Recommended for First-Time Install)
 
 1. **Boot into Fastboot mode**
-   - Power off your device and use the hardware button combo  
-   **OR**  
+   - Power off your device and use the hardware button combo
+   **OR**
    - Run:
      ```bash
      adb reboot bootloader
@@ -25,7 +25,7 @@
 
 2. **Flash the recovery image**
    ```bash
-   fastboot flash boot <recovery_filename>.img
+   fastboot flash boot boot.img
    ```
 
 3. **Reboot into Recovery**
@@ -34,29 +34,29 @@
    ```
 
 4. **Format data**
-   - In recovery:  
+   - In recovery:
      `Factory Reset > Format Data`
 
 5. **Connect the phone to your PC**
 
 6. **Sideload the ROM**
-   - In recovery:  
-     `Apply update > Apply from ADB`  
+   - In recovery:
+     `Apply update > Apply from ADB`
    - On your PC, run:
      ```bash
-     adb sideload <rom_filename>.zip
+     adb sideload lineage-23.2-xxxx-UNOFFICIAL-stone.zip
      ```
 
 7. **(Optional)** When prompted after sideloading, choose **Yes** to reboot to recovery again if you want to flash:
-   - GApps  
-   - Magisk  
+   - GApps
+   - Magisk
    - Any other additional `.zip`
 
 8. **Format data again** if you flashed anything in Step 7
 
 9. If you're not flashing anything else, choose **No** when prompted
 
-10. **Reboot to system**  
+10. **Reboot to system**
     *(Note: First boot may take several minutes)*
 
 ---
@@ -68,21 +68,21 @@ You can update your ROM using one of the following methods:
 ---
 
 ### ✅ Option 1: OTA Update
-- Go to:  
-  `Settings > System > Updater`  
-- Download and install the new build  
-- Click reboot  
+- Go to:
+  `Settings > System > Updater`
+- Download and install the new build
+- Click reboot
 - Done!
 
 ---
 
 ### ✅ Option 2: Local Update (Via Updater App)
-1. Place the new ROM `.zip` on your internal storage  
-2. Open the **Updater app**  
-3. Tap the 3-dot menu > **Local Update**  
-4. Select the ROM `.zip` and confirm  
-5. Phone will reboot to recovery and apply the update  
-6. Done!
+1. Place the new ROM `.zip` on your internal storage
+2. Open the **Updater app**
+3. Tap the 3-dot menu > **Local Update**
+4. Select the ROM `.zip` and confirm
+5. The update will install seamlessly in the background.
+6. Tap **Reboot** when the installation completes.
 
 ---
 
@@ -90,16 +90,16 @@ You can update your ROM using one of the following methods:
 
 1. **Boot into Recovery**
 
-2. In recovery:  
+2. In recovery:
    `Apply update > Apply from ADB`
 
 3. On PC, sideload the ROM:
    ```bash
-   adb sideload <rom_filename>.zip
+   adb sideload lineage-23.2-xxxx-UNOFFICIAL-stone.zip
    ```
 
 4. **(Optional)** Reboot back to recovery and sideload any additional zips you had earlier:
-   - GApps  
+   - GApps
    - Magisk
 
 5. **Reboot to system**
@@ -107,4 +107,4 @@ You can update your ROM using one of the following methods:
 ---
 
 ## ✅ You're Done!
-Enjoy your freshly installed or updated ROM.  
+Enjoy your freshly installed or updated ROM.
